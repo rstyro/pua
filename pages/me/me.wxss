@@ -1,0 +1,94 @@
+page{  
+  background-color: #eeeeee;  
+}  
+.me-container{
+  display: flex;
+  flex-direction: column;
+}
+.img{
+  width: 50rpx;
+}
+/* 用户信息那栏 */
+.me-container .user-info{
+  padding: 40rpx 20rpx 40rpx 40rpx;
+  margin-top: 5rpx;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+}
+.me-container .user-head{
+  border-radius: 50%;
+  width: 150rpx;
+  height: 150rpx;
+  float: left;
+}
+.me-container .user-text{
+  display: block;
+  float: left;
+
+  margin-left: 20rpx;
+  text-align: left;
+}
+.me-container .user-name{
+  display: block;
+  font-size: 1em;
+  font-weight: 700;
+  margin-top: 20rpx;
+}
+.me-container .sex{
+  display: block;
+  margin-top: 10rpx;
+  width: 50rpx;
+}
+
+.me-container .icon-right{
+  float: right;
+  width: 50rpx;
+  vertical-align: middle;
+  margin-top: 50rpx;
+}
+/*工具列表*/
+.tools{
+  width: 100%;
+  background: #fff;
+  margin-top: 30rpx;
+
+}
+
+.tools-line{
+  border-bottom: 1px solid #eee;
+  margin: 10rpx 20rpx 10rpx 20rpx;
+  height: 100rpx;
+  position: relative;
+}
+
+.tools-line .tool-img{
+  margin-top: 30rpx ;
+  margin-right: 20rpx;
+  margin-left: 10rpx;
+  display: block;
+  float: left;
+}
+.tools-line .tool-name{
+  display: block;
+  float: left;
+  margin-top: 30rpx ;
+  letter-spacing:5rpx;
+}
+.tools-line .message-num{
+  display: inline-block;
+  position: absolute;
+  right: 90rpx;
+  top: 30rpx;
+  width: 50rpx;
+  height: 50rpx;
+  background: #d00;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+}
+.tools-line .icon-right{
+  float: right;
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 25rpx;
+}

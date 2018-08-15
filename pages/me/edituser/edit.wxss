@@ -1,0 +1,38 @@
+page {
+  background: #efeff1;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+}
+
+.head image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+  display: block;
+}
+
+.line {
+  display: block;
+}
+
+.line-title {
+  padding: 20rpx 0rpx 20rpx 30rpx;
+  display: block;
+}
+
+.line input, .radio-group, .selectValue {
+  padding: 20rpx 0rpx 20rpx 30rpx;
+  background: #fff;
+  display: block;
+}
+
+.submitBtn {
+  margin: 20rpx 0rpx;
+  color: #fff;
+  background: #09BB07;
+}

@@ -1,0 +1,19 @@
+<view class="container">
+  <view class="introduce">
+    <text class='title'>作者</text>
+     <view class="userinfo">
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{info.userPath}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{info.nickName}}</text>
+  </view>
+    <block wx:for="{{aboutMe}}" wx:key="key">
+      <text class="line">{{item.text}}</text>
+    </block>
+  </view>
+
+  <view class="introduce">
+    <text class='title'>关于小程序</text>
+    <block wx:for="{{aboutInfo}}" wx:key="key">
+      <text class="line">{{item.text}}</text>
+    </block>
+  </view>
+</view>

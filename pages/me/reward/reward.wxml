@@ -1,0 +1,5 @@
+<view class='container'>
+  <text class="title">赏个铜板呗</text>
+    <text class="title">最喜欢你一言不合就打赏的样子了</text>
+  <image bindtap="viewImg" class='praiseImg' data-path="{{path}}" src='{{path}}' mode='widthFix'></image>
+</view>

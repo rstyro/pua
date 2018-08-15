@@ -1,0 +1,9 @@
+<view class='container'>
+  <view class='title'>感谢反馈</view>
+
+  <form bindsubmit="submitFeedback" >
+      <textarea  name='content' auto-height="true" auto-focus="true" placeholder="这里可以写你任何你想对我说的话,只要不犯法，你都可以写" value='{{content}}' maxlength='2000' />
+   <button formType="submit">提交</button>
+  </form>
+
+</view>

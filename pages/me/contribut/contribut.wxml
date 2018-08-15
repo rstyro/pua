@@ -1,0 +1,18 @@
+<view class='container'>
+  <view class='title'>感谢您的投稿</view>
+
+  <form bindsubmit="submitContribute">
+    <view class="line">
+      <text class="line-title">内容类型:</text>
+      <picker bindchange="bindPickerChange" value="{{index}}" range-key="name" range="{{typeList}}">
+        <view class="picker">
+          <input  value='{{typeList[index].name}}' disabled="ture" placeholder="点击选择类型"></input>
+        </view>
+      </picker>
+    </view>
+
+    <textarea name='content' auto-height="true" auto-focus="true" placeholder="200字以内，内容不限" value='{{content}}' maxlength='200' />
+    <button formType="submit">提交</button>
+  </form>
+
+</view>

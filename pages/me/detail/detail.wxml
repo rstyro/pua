@@ -1,0 +1,20 @@
+<view class='container'>
+  <view class="userinfo">
+    <image bindtap="viewPath" mode='aspectFill' class="userinfo-avatar" data-path="{{userInfo.pic_path}}" src="{{userInfo.pic_path}}" background-size="cover"></image>
+    <view class="line">
+      <text class="userinfo-nickname">{{userInfo.nick_name}}</text>
+      <image class="userinfo-sex" wx:if="{{userInfo.sex == 1}}" src='/resource/images/boy.png' mode='widthFix'></image>
+      <image class="userinfo-sex" mode='widthFix' wx:else src='/resource/images/girl.png'></image>
+    </view>
+
+    <view class="line userInfo-place">
+      <image src='/resource/images/place.png' mode='widthFix'></image>
+      <text>{{userInfo.province}} {{userInfo.city}}</text>
+    </view>
+    <text class="line userinfo-sign">{{userInfo.sign}}</text>
+    <view class="line editInfo" bindtap='editInfo'>
+      <image src='/resource/images/edit.png' mode='widthFix' ></image>
+      <text>编辑个人资料</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,2 @@
+/* pages/other/other.wxss */
+@import "../templates/pua/pua.wxss";

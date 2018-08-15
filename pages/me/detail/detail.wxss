@@ -1,0 +1,72 @@
+page{height:100%;
+background: url(http://cool.lrshuai.top/upload/images/userinfo-bg.jpg);
+ background-size: 100% ;
+}
+.bg{
+  position: relative;
+  height: 100%；
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.line{
+  margin: 20rpx auto;
+  display: flex;
+  align-items: center;
+}
+.userinfo-avatar {
+  width: 150rpx;
+  height: 150rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  display: inline-block;
+}
+
+.userinfo-sex {
+  width: 50rpx;
+  margin-left: 10rpx;
+  display: inline-block;
+}
+.line{
+  margin: 20rpx auto;
+  display: flex;
+  align-items: center;
+}
+.userInfo-place{
+  margin: 20rpx auto;
+  display: flex;
+  align-items: center;
+}
+.userInfo-place image {
+  width: 50rpx;
+  margin-right: 20rpx;
+  display: inline-block;
+}
+
+.userInfo-place text {
+  font-weight: 300px;
+}
+
+.userinfo-sign {
+  font-weight: 300px;
+}
+.editInfo{
+ margin-top: 30rpx;
+ border: 1px solid #1afa29;
+  display: flex;
+  align-items: center;
+}
+.editInfo image{
+  display: inline-block;
+  width: 50rpx;
+  margin-left: 20rpx;
+}
+.editInfo text{
+  color: #1afa29;
+  margin: 10rpx 20rpx;
+}

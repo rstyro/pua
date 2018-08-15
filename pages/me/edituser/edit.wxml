@@ -1,0 +1,53 @@
+<view class="edit-container">
+  <view class='head'>
+    <image mode='aspectFill' src='{{userInfo.pic_path}}' bindtap='changeImg'></image>
+  </view>
+  <form bindsubmit="submitInfo">
+    <view class='line'>
+      <text class='line-title'>昵称:</text>
+      <input name="nick_name" bindblur="bindName" maxlength="10" placeholder="请输入你的昵称" value='{{userInfo.nick_name}}'></input>
+    </view>
+
+    <view class='line'>
+      <text class='line-title'>性别:</text>
+      <radio-group class="radio-group" name="sex" bindchange="radioChange">
+        <radio value="1" checked="{{userInfo.sex == 1}}" />男
+        <radio value="2" checked="{{userInfo.sex == 2}}" />女
+      </radio-group>
+    </view>
+
+    <view class='line'>
+      <text class='line-title'>个性签名:</text>
+      <input name="sign" bindblur="bindSign"  maxlength="50" placeholder="请输入你的个性签名" value='{{userInfo.sign}}'></input>
+    </view>
+    <view class='line'>
+      <text class='line-title'>Email:</text>
+      <input name="email" bindblur="bindEmail" placeholder="请输入你的Email" value='{{userInfo.email}}'></input>
+    </view>
+    <view class='line'>
+      <text class='line-title'>手机号码:</text>
+      <input type='number' bindblur="bindPhone" maxlength="11" name="phone" placeholder="请输入你的手机号码" value='{{userInfo.phone}}'></input>
+    </view>
+
+    <view class='line'>
+      <text class='line-title'>籍贯:</text>
+        <picker mode="region" bindchange="bindRegionChange" value="{{region}}" >
+          <view class="picker">
+           <text class="selectValue">{{userInfo.province}},{{userInfo.city}}</text>
+          </view>
+        </picker>
+    </view>
+
+     <view class='line'>
+      <text class='line-title'>生日:</text>
+        <picker mode="date" bindchange="bindDateChange" value="{{userInfo.birthday}}" >
+          <view class="picker">
+           <text class="selectValue">{{userInfo.birthday}}</text>
+          </view>
+        </picker>
+    </view>
+
+    <button formType="submit" class="submitBtn">提交</button>
+
+  </form>
+</view>

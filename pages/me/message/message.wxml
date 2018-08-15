@@ -1,0 +1,19 @@
+<view class="msg-container">
+  <text class="title">公告</text>
+  <view class="list-box">
+
+    <view class='list' wx:for="{{list}}" wx:key="{{index}}" wx:if="{{item.is_del == 0}}">
+      <view class='content' data-index="{{index}}"style="{{item.txtStyle}}" bindtap='openMsg' bindtouchstart="touchS" bindtouchmove="touchM"  bindtouchend="touchE" >
+        <image src="/resource/images/system-active.png"  wx:if="{{item.read_flag == 0}}" mode='widthFix'></image>
+        <image src="/resource/images/system.png"  wx:else mode='widthFix'></image>
+        <text class='txt'>{{item.msg_content}}</text>
+      </view>
+      <view class='operate'>
+        <view class='read' data-index="{{index}}" bindtap='tabMsgRead'>标记为已读</view>
+        <view class="del" data-index="{{index}}" bindtap='delMsgRead'>删除</view>
+      </view>
+    </view>
+
+
+  </view>
+</view>

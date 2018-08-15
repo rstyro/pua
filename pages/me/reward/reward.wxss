@@ -1,0 +1,16 @@
+page{
+
+}
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.title{
+  margin: 10rpx;
+  padding: 10rpx;
+
+}
+.praiseImg {
+  width: 66%;
+}

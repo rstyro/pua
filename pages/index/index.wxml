@@ -1,0 +1,33 @@
+<import src="../templates/pua/pua.wxml" />
+<view class='top-view row-box'>
+  <scroll-view scroll-x="true" class="tab-h flex1" scroll-left="{{scrollLeft}}">
+  <!--
+    <view class="tab-item {{currentTab=='all'?'active':''}}" data-current="all" bindtap="swichNav">全部</view>
+  -->
+    <block wx:for="{{typeList}}" wx:key="key" >
+      <view class="tab-item {{currentTab == item.key?'active':''}}" data-current="{{item.key}}" data-id="{{item.id}}" bindtap="swichNav">{{item.name}}</view>
+    </block>
+    <!--
+    <view class="tab-item {{currentTab=='sayLove'?'active':''}}" data-current="sayLove" bindtap="swichNav">情话</view>
+    <view class="tab-item {{currentTab=='accost'?'active':''}}" data-current="accost" bindtap="swichNav">搭讪</view>
+    <view class="tab-item {{currentTab=='tricks'?'active':''}}" data-current="tricks" bindtap="swichNav">套路</view>
+    <view class="tab-item {{currentTab=='coolRead'?'active':''}}" data-current="coolRead" bindtap="swichNav">冷读</view>
+    <view class="tab-item {{currentTab=='rhesis'?'active':''}}" data-current="rhesis" bindtap="swichNav">名句</view>
+    -->
+  </scroll-view>
+  <view class="top-search" bindtap="searchTab">
+    <icon type="search" size="14" color='#111'></icon>
+  </view>
+
+</view>
+
+
+<!--index.wxml-->
+<view class="container" bindtouchstart="touchS"  bindtouchend="touchE">
+  <block wx:if="{{hasData}}" wx:for="{{list}}" wx:key="key">
+    <template is="puaTemplate" data="{{...item}}" />
+  </block>
+  <block wx:if="{{!hasData}}" >
+   <template is="nullData"/>
+  </block>
+</view>

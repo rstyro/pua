@@ -1,0 +1,66 @@
+<view class="me-container">
+  <view class="user-info" bindtap='meDetail'>
+    <image class="user-head" mode='aspectFill' src="{{userInfo.pic_path}}"></image>
+    <view class='user-text'>
+      <text class='user-name'>{{userInfo.nick_name}}</text>
+      <image class='sex' wx:if="{{userInfo.sex == 1}}" src='/resource/images/boy.png' mode='widthFix'></image>
+      <image class='sex' wx:else src='/resource/images/girl.png' mode='widthFix' ></image>
+    </view>
+    <image class='icon-right' mode='widthFix' src="../../resource/images/right-icon.png"></image>
+  </view>
+
+  <view class='tools'>
+    <view class='tools-line' bindtap="meCollect">
+      <image mode='widthFix' class='img tool-img' src='../../resource/images/heart-active.png'></image>
+      <text class='tool-name'>我的收藏</text>
+      <image class='img icon-right' mode='widthFix' src="../../resource/images/right-icon.png"></image>
+    </view>
+
+    <view class='tools-line' bindtap="meContribut">
+      <image mode='widthFix' class='img tool-img' src='../../resource/images/contribute.png'></image>
+      <text class='tool-name'>我要投稿</text>
+      <image class='img icon-right' mode='widthFix' src="../../resource/images/right-icon.png"></image>
+    </view>
+  </view>
+
+   <view class='tools'>
+
+    <view class='tools-line' bindtap="systemMsg">
+      <image mode='widthFix' class='img tool-img' src='../../resource/images/system.png'></image>
+      <text class='tool-name'>系统消息</text>
+      <text class='message-num' wx:if="{{msgNum > 0}}">{{msgNum}}</text>
+      <image class='img icon-right' mode='widthFix' src="../../resource/images/right-icon.png"></image>
+    </view>
+
+    <view class='tools-line' wx:if="{{userInfo.user_id == 1}}"   bindtap="issueMsg">
+      <image mode='widthFix' class='img tool-img' src='../../resource/images/issue.png'></image>
+      <text class='tool-name'>发布系统消息</text>
+      <image class='img icon-right' mode='widthFix' src="../../resource/images/right-icon.png"></image>
+    </view>
+
+  </view>
+
+   <view class="tools">
+     <view class='tools-line' bindtap='rewardAuther'>
+        <image mode='widthFix' class='img tool-img' src='../../resource/images/reward.png'></image>
+        <text class='tool-name'>给赏钱</text>
+        <image class='img icon-right' mode='widthFix' src="../../resource/images/right-icon.png"></image>
+      </view>
+      <view class='tools-line' bindtap='cleanStorage'>
+        <image mode='widthFix' class='img tool-img' src='../../resource/images/clean.png'></image>
+        <text class='tool-name'>清除缓存</text>
+      </view>
+      <view class='tools-line' bindtap='feedbackForMe'>
+        <image mode='widthFix' class='img tool-img' src='../../resource/images/feedback.png'></image>
+        <text class='tool-name'>意见反馈</text>
+        <image class='img icon-right' mode='widthFix' src="../../resource/images/right-icon.png"></image>
+      </view>
+
+      <view class='tools-line' bindtap='aboutProgram'>
+        <image mode='widthFix' class='img tool-img' src='../../resource/images/about.png'></image>
+        <text class='tool-name'>关于</text>
+        <image class='img icon-right' mode='widthFix' src="../../resource/images/right-icon.png"></image>
+      </view>
+
+    </view>
+</view>

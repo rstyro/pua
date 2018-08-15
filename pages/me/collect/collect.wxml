@@ -1,0 +1,10 @@
+<import src="../../templates/pua/pua.wxml" />
+<view class="container">
+  <view wx:if="{{hasItem}}" class="touch-item {{item.isTouchMove ? 'touch-move-active' : ''}}" data-index="{{index}}" bindtouchstart="touchstart" bindtouchmove="touchmove" wx:for="{{items}}" wx:key="">
+    <text class="content">{{item.content}}</text>
+    <view class="del" catchtap="del" data-speechcraft_id="{{item.speechcraft_id}}" data-index="{{index}}">删除</view>
+  </view>
+  <view wx:if="{{!hasItem}}">
+   <template is="nullData"/>
+  </view>
+</view>

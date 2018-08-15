@@ -1,0 +1,21 @@
+<view class='container'>
+  <view class='title'>发布系统消息</view>
+
+  <form bindsubmit="submitSystemsg">
+  <view class="line">
+    <text>推送ID:</text>
+    <input name="push_id" placeholder="指定用户id" value=''></input>
+  </view>
+  <view class="line">
+    <text>标　题:</text>
+    <input name="title" placeholder="请输入标题" value=''></input>
+  </view>
+    <textarea name='content' auto-height="true" auto-focus="true" placeholder="只要不犯法，你都可以写" value='{{content}}' maxlength='2000' />
+     <view class="line">
+    <text>创建时间:</text>
+    <input  name="create_time" placeholder="请输入创建时间" value=''></input>
+   </view>
+    <button formType="submit">提交</button>
+  </form>
+
+</view>

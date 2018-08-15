@@ -1,0 +1,71 @@
+@import "../templates/wxSearchView/wxSearchView.wxss";
+
+/* template css */
+@import "../templates/pua/pua.wxss";
+
+page {
+  background: #efeff1;
+}
+.top-view{ 
+  position: fixed;
+  background: #EBEDF4;
+  top: 0;
+  right: 0;
+  z-index: 99;
+}
+.top-search {
+  width: 80rpx;
+  height: 80rpx;
+  text-align: center;
+  font-size:0;
+}
+.top-search icon{
+  line-height: 90rpx;
+  font-size:24rpx;
+  display: inline-block;
+}
+.tab-h {
+  height: 80rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+  line-height: 80rpx;
+  font-size: 16px;
+  white-space: nowrap;
+}
+.tab-item {
+  padding: 0 36rpx;
+  display: inline-block;
+  color: #fff;
+}
+.tab-item.active {
+  color: #011935;
+  position: relative;
+}
+.tab-item.active:after {
+  content: "";
+  display: block;
+  height: 8rpx;
+  width: 80%;
+  background: #00343F;
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  border-radius: 16rpx;
+}
+.scoll-h {
+  height: 100%;
+}
+
+
+
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin-top: 90rpx;
+}
+

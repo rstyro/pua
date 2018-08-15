@@ -1,0 +1,89 @@
+
+.pua-box{
+  margin: 10rpx;
+  padding: 0rpx 10px 10rpx 10px;
+  background: #fff;
+}
+.pua-box .first-line{
+  padding: 10rpx 0;
+}
+.pua-box .first-line .time{
+  color: #ccc;
+  font-size: 24rpx;
+  line-height: 24rpx;
+  text-align: left;
+}
+.pua-box .first-line .auther{
+  color: #ccc;
+  font-size: 24rpx;
+  line-height: 24rpx;
+  text-align: right;
+}
+.pua-box .content{
+  color: #222;
+  font-size: 36rpx;
+  display: block;
+  font-weight: 500;
+}
+.pua-box .tools{
+  display: block;
+  margin-top: 30rpx;
+  font-size:0;
+}
+.pua-box .tools .tools-left{
+  float: left;
+}
+.pua-box .tools .tools-right{
+  float: right;
+}
+.pua-margin{
+  margin-left: 30rpx;
+}
+.pua-box .t-imgbox{
+  display: inline-block;
+  font-size: 0;
+  background-color: #37C6C0;
+  padding: 8rpx 25rpx;
+  border-radius: 4rpx;
+  margin-left: 30rpx;
+}
+
+.pua-box .t-imgbox:first-child{
+  margin-left: 0;
+}
+.pua-box .t-imgbox .praise{
+  margin-right: 15rpx;
+}
+.pua-box .t-imgbox image{
+   width: 32rpx;
+   height: 32rpx;
+   vertical-align: middle;
+}
+.pua-box .t-imgbox text{
+  color: #fff;
+  line-height: 32rpx;
+  font-size: 24rpx;
+  vertical-align: middle;
+  display: inline-block;
+}
+.pua-box .t-imgbox text.pua-label{
+  color: #fff;
+  font-weight: 600;
+}
+
+.null-data{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100rpx;
+}
+/*开发中提示*/
+.codeing-container{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 200rpx;
+}
+.other-container text{
+  display: block;
+}

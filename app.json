@@ -1,0 +1,50 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/me/me",
+    "pages/me/detail/detail",
+    "pages/me/message/message",
+    "pages/me/about/about",
+    "pages/other/other",
+    "pages/search/search",
+    "pages/templates/pua/pua",
+    "pages/me/collect/collect",
+    "pages/study/study",
+    "pages/me/feedback/feedback",
+    "pages/me/issuemsg/issuemsg",
+    "pages/me/edituser/edit",
+    "pages/me/contribut/contribut",
+    "pages/me/reward/reward"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "总是套路得人心",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#222",
+    "selectedColor": "#1296db",
+    "backgroundColor": "#eee",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "秘籍",
+        "iconPath": "resource/images/book.png",
+        "selectedIconPath": "resource/images/book-active.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "resource/images/me.png",
+        "selectedIconPath": "resource/images/me-active.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

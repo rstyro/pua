@@ -1,0 +1,6 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{canIUse}}" type='primary' open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 微信授权登录 </button>
+  </view>
+</view>

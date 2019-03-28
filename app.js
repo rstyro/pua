@@ -65,6 +65,17 @@ App({
         }
       }
     });
+
+    wx.getSetting({
+      success: res => {
+        if (!res.authSetting['scope.userInfo']) {
+          // 没有授权 去授权
+            wx.navigateTo({
+              url: '../auth/auth'
+            })          
+        }
+      }
+    })
   },
   //用户登录
   userLogin: function (loginCode, callback){
@@ -146,6 +157,8 @@ App({
       }
     })
   }
+  
+
 })
 // polyfill for Android before app starts
 if (!Array.prototype.findIndex) {

@@ -5,7 +5,8 @@ const app = getApp();
 Page({
   data: {
     list: [],
-    typeList:[
+    // 这个是以前的版本，不要了
+    typeListOld:[
       { id: 0, name: "全部", key: "all" },
       { id: 1, name: "段子", key:"episode"},
       { id: 2, name: "情话", key: "sayLove" },
@@ -16,12 +17,15 @@ Page({
       { id: 7, name: "互动", key: "interact" },
       { id: 8, name: "游戏", key: "game" }
     ],
+    typeList: [
+      { id: 0, name: "情话", key: "sayLove" }
+    ],
     kw: "",
-    speechcraftType: '',
+    speechcraftType: 'sayLove',
     url: app.globalData.url + '/speechcraft/list',
-    page: { page_no: 1, page_size: 5, page_total: 1 },
+    page: { page_no: 1, page_size: 20, page_total: 1 },
     isEnd: false,
-    currentTab: 'all', //预设当前项的值
+    currentTab: 'sayLove', //预设当前项的值
     scrollLeft:0, //设定scroll view 向左滑动的距离
     hasData:true,
     slideWidth:150,//滑动的距离
@@ -42,6 +46,13 @@ Page({
           wx.hideLoading();
         });
       }
+  },
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow: function () {
+    wx.showLoading();
+    this.initParame();
   },
   //更新数据
   changeListData: function (data, kw, speechcraftType) {

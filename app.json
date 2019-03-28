@@ -14,12 +14,13 @@
     "pages/me/issuemsg/issuemsg",
     "pages/me/edituser/edit",
     "pages/me/contribut/contribut",
-    "pages/me/reward/reward"
+    "pages/me/reward/reward",
+    "pages/auth/auth"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "总是套路得人心",
+    "navigationBarTitleText": "土味情话",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
@@ -30,7 +31,7 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "秘籍",
+        "text": "情话",
         "iconPath": "resource/images/book.png",
         "selectedIconPath": "resource/images/book-active.png"
       },

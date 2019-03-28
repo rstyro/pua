@@ -1,13 +1,14 @@
 <import src="../templates/pua/pua.wxml" />
 <view class='top-view row-box'>
   <scroll-view scroll-x="true" class="tab-h flex1" scroll-left="{{scrollLeft}}">
-  <!--
-    <view class="tab-item {{currentTab=='all'?'active':''}}" data-current="all" bindtap="swichNav">全部</view>
-  -->
+
+   
     <block wx:for="{{typeList}}" wx:key="key" >
       <view class="tab-item {{currentTab == item.key?'active':''}}" data-current="{{item.key}}" data-id="{{item.id}}" bindtap="swichNav">{{item.name}}</view>
     </block>
+
     <!--
+    <view class="tab-item {{currentTab=='sayLove'?'active':''}}" data-current="sayLove" data-id="0" bindtap="swichNav">情话</view>
     <view class="tab-item {{currentTab=='sayLove'?'active':''}}" data-current="sayLove" bindtap="swichNav">情话</view>
     <view class="tab-item {{currentTab=='accost'?'active':''}}" data-current="accost" bindtap="swichNav">搭讪</view>
     <view class="tab-item {{currentTab=='tricks'?'active':''}}" data-current="tricks" bindtap="swichNav">套路</view>

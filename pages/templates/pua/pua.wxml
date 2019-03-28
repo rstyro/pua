@@ -16,7 +16,7 @@
             <image wx:if="{{collect_flag}}" src='/resource/images/heart-active.png'  mode='widthFix'></image>
             <image wx:else src='/resource/images/heart.png'  mode='widthFix'></image>
           </view>
-          <view class='t-imgbox' data-current="{{type}}"  bindtap="swichNav">
+          <!-- <view class='t-imgbox' data-current="{{type}}"  bindtap="swichNav">
             <text class="pua-label" wx:if="{{type == 'episode'}}">段子</text>
             <text class="pua-label" wx:if="{{type == 'chickenSoup'}}">鸡汤</text>
             <text class="pua-label" wx:if="{{type == 'sayLove'}}">情话</text>
@@ -25,7 +25,7 @@
             <text class="pua-label" wx:if="{{type == 'accost'}}">搭讪</text>
             <text class="pua-label" wx:if="{{type == 'interact'}}">互动</text>
             <text class="pua-label" wx:if="{{type == 'game'}}">游戏</text>
-          </view>
+          </view> -->
         </view>
         <!-- <view class='tools-right'>
           <view class='t-imgbox' bindtap="shareMe">

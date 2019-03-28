@@ -51,8 +51,8 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    wx.showLoading();
-    this.initParame();
+    var that = this;
+    that.requestData(that.data.url, that.data.page.page_no, that.data.page.page_size, that.data.kw, that.data.speechcraftType);
   },
   //更新数据
   changeListData: function (data, kw, speechcraftType) {

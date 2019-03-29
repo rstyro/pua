@@ -6,7 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    path: app.globalData.url +"/upload/images/reward.jpg"
+    path: app.globalData.imgurl +"/upload/images/reward.jpg"
   },
 
   /**

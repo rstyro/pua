@@ -7,7 +7,7 @@ App({
   globalData: {
     header: { 'Cookie': '', "content-Type": "application/x-www-form-urlencoded" },
     url: "https://lrshuai.top/pua",
-    imgurl: "https://lrshuai.top",
+    imgurl: "https://www.lrshuai.top",
     hasMsg:false
   },
   userInfo: false,

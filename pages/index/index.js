@@ -317,5 +317,40 @@ Page({
       
     }
   },
-  
+  onShareAppMessage: function (options){
+    var that = this;
+    var shareObject = {
+      // 默认是小程序的名称(可以写slogan等)
+        title:"聊不到另一半算我输",
+      shareTicket:"聊不到另一半算我输",
+        // 默认是当前页面，必须是以‘/’开头的完整路径
+        path:"/pages/study/study",
+        success:function(res){
+          // 转发成功之后的回调
+　　　　　　if (res.errMsg == 'shareAppMessage:ok') {
+              console.log("ok share");
+　　　　　　}
+        },fail: function(){
+　　　　　　// 转发失败之后的回调
+　　　　　　if(res.errMsg == 'shareAppMessage:fail cancel'){
+　　　　　　　　// 用户取消转发
+　　　　　　}else if(res.errMsg == 'shareAppMessage:fail'){
+　　　　　　　　// 转发失败，其中 detail message 为详细失败信息
+　　　　　　}
+　　　　},
+        complete: function(){
+          console.log("!!!!!");
+        }
+　　　　
+    };
+    // 来自页面内的按钮的转发
+  　　if (options.from == 'button') {
+    　　　　var eData = options.target.dataset;
+            console.log("eData:",eData);
+    　　　　console.log(eData.name);     // shareBtn
+    　　　　// 此处可以修改 shareObj 中的内容
+            shareObj.path = '/pages/index/index?id=' + eData.name;
+  　　}
+    return shareObj;
+  }
 })

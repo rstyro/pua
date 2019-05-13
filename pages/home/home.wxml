@@ -1,0 +1,39 @@
+<view class='home'>
+  <view class='row-box home-top'>
+    <view class='flex1'><view class='home-top-item active'>精选</view></view>
+    <view class='flex1'><view class='home-top-item'>最新</view></view>
+    <view class='flex1'><view class='home-top-item'>分类</view></view>
+  </view>
+
+  <swiper
+  indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}"
+  interval="{{interval}}"
+  duration="{{duration}}"
+>
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" style="width:{{imgWidth}}px;height:{{imgHeight}}px" bindload='imageLoad' class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+
+  <view class='topic'>
+
+  <view class='col-box topic-item'>
+    <view class='flex1 topic-title'>热门专辑</view>
+      <view class='flex1'>
+        <image class='top-image' style="width:{{imgWidth}}px;height:{{imgHeight}}px" bindload='imageLoad' src='/resource/images/topic/topic1.jpg' mode='widthFix' ></image>
+      </view>
+    </view>
+
+    <view class='col-box topic-item'>
+    <view class='flex1 topic-title'>精选专辑</view>
+      <view class='flex1'>
+        <image class='top-image'style="width:{{imgWidth}}px;height:{{imgHeight}}px" bindload='imageLoad' src='/resource/images/topic/topic2.jpg' mode='widthFix' ></image>
+      </view>
+    </view>
+
+  </view>
+
+</view>

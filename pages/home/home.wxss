@@ -1,0 +1,41 @@
+/* pages/home/home.wxss */
+page {
+  background: #efeff1;
+}
+.home{
+
+}
+.home-top{
+  text-align: center;
+  background: #fff;
+}
+.home-top .home-top-item{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  letter-spacing: 5px;
+  font-weight: 580;
+}
+.home-top .active{
+   padding-bottom: 5px;
+   border-bottom:  2px solid #0451A5;
+   color: #0451A5;
+}
+
+/** 主题*/ 
+.topic{
+  margin-top: 20rpx;
+}
+.topic .topic-item{
+  background: #fff;
+  width: 100%;
+  margin-top: 20rpx;
+}
+.topic .topic-title{
+  margin: 20rpx 0px; 
+  padding-left: 5px;
+  margin-left:5rpx ;
+  border-left:  3px solid #000;
+  color: #000;
+  font-weight: 600;
+  font-size: 30rpx;
+}

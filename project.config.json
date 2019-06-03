@@ -12,6 +12,8 @@
 	"appid": "wx800ccacb31982312",
 	"projectname": "lrs_weixin",
 	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,
